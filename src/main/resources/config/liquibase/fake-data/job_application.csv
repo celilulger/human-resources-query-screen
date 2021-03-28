@@ -1,11 +1,11 @@
 id;first_name;last_name;age;gender;education_status;city;district;military_status;language;programming_language;hobbies;certificates
-1;Ataman;Limoncuoğlu;4620;Intranet pixel parse;Fork Music Auto;Beklemişview;National;Endonezya Dominik Shilling;Customer magenta;Bangladeş Central local;blue service-desk;Consultant
-2;Atılgan;Aydan;49186;redefine Awesome back-end;Sleek synthesizing Koruna;Düşenkalkarborough;input firmware;Tunus;wireless;Kamerun;Mouse system;instruction quantify
-3;Çıngır;Berberoğlu;45426;copy Movies;Wisconsin Indiana;Bekbekeçchester;Walk;Computer Producer Seamless;Pound white Incredible;Gabon;Assistant;Supervisor
-4;İmrem;Pektemek;61155;facilitate Kentucky;reboot Berkshire;Port Akdoğanland;redefine Beauty;Cedi optical Fresh;sky;indigo lavender;Hat Optimization;magenta Investor Intuitive
-5;Ançuk;Kunter;29967;Account SQL;RSS Solomon;Bıçkıshire;Incredible Paradigm;bypassing;definition transform Toys;Idaho;Cheese;open-source
-6;Akınçı;Adan;30721;Usability;maximize networks Finlandiya;Atalmışberg;Sports Fantastic;indigo system;Concrete Avon;quantify protocol;User-centric;Multi-lateral Sports implement
-7;Beğbars;Nebioğlu;70637;Bedfordshire Senior;Chips;Örgeland;array;Jewelery COM;plum withdrawal efficient;benchmark tertiary;deposit;tertiary deliverables Movies
-8;Buçur;Beşok;26582;Devletleri enterprise Designer;Creative;South Eser;up;compressing purple Handcrafted;24/7;Investor Cotton Fully-configurable;interfaces envisioneer;Berkshire
-9;Apak;Kuday;23853;Global Congolese;Tala Industrial;Çevikville;Account;target Supervisor;Movies Dynamic;facilitate bandwidth Auto;Handmade Computer Cambridgeshire;National eco-centric Rupee
-10;Bakır;Kaplangı;48892;regional neural;methodologies parsing silver;East Balaka;Designer;Concrete Small Developer;Avon Movies;Administrator Consultant parsing;interface program Loan;Keyboard black connect
+1;Ataman;Limoncuoğlu;20;Erkek;Lisans;Ankara;Yenimahalle;Tecilli;İngilizce;Java;Müzik;Java Yazılım Uzmanlığı
+2;Atılgan;Aydan;25;Erkek;Yüksek Lisans;İstanbul;Kadıköy;Yapıldı;İngilizce;C#;Spor;Microsoft Yazılım Uzmanlığı
+3;Ecem;Berberoğlu;33;Kadın;Lisans;Ankara;Keçiören;Muaf;İspanyolca;JavaScript;Kitap Okumak;Supervisor
+4;Emre;Pektemek;45;Erkek;Lisans;İzmir;Göztepe;Yapıldı;İngilizce;Python;Basketbol;Magenta Investor Intuitive
+5;Mert;Kunter;21;Erkek;Ön Lisans;Ankara;Çankaya;Tecilli;İngilizce;Java;Bilgisayar Oyunları;open-source
+6;Akın;Adan;30;Erkek;Lisans;Adana;Hürriyet;Yapıldı;Çince;C#;Sinema;Multi-lateral Sports implement
+7;Barbaros;Nebioğlu;27;Lisans;Erkek;İstanbul;Esenler;Muaf;İngilizce;Java;Futbol;deposit
+8;Yasin;Beşok;26;Erkek;Yüksek Lisans;Ankara;Altındağ;Yapıldı;Fransızca;Python;Gezi;interfaces envisioneer
+9;Sarp;Kuday;23;Erkek;Lisans;İstanbul;Bağcılar;Tecilli;İngilizce;Java;Kitap okumak;National eco-centric Rupee
+10;Bakır;Kaplangı;48;Erkek;Yüksek Lisans;Ankara;Gölbaşı;Yapıldı;İtalyanca;C#;Tiyaro;interface program Loan
