@@ -42,7 +42,9 @@
     "jwtSecretKey": "NDMzMzNjZWRiMmE1ODMyNWU5MzVmMTk3ODk0YWM2MGExN2RmMTljMDYwZmUwYTgwNDU1ZjA2MmMxNzBlNGFhMzNkYjZlNDU3MGU0YzBmZTAwMTFmYjY3YTVjMGQ0YmIyYjc2NTgyNGNiNDJiODIzZGQ5ZjU4MmY5YzNiNjBiOTA=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["JobApplication"],
+    "lastLiquibaseTimestamp": 1616935889000
   },
   "git-provider": "GitHub",
   "git-company": "celilulger",

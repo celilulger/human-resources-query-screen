@@ -1,0 +1,78 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="jobApplication">
+      <h2 data-cy="jobApplicationDetailsHeading">
+        <span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.detail.title">Job Application</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ jobApplication.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.firstName">First Name</span></dt>
+        <dd>
+          <span>{{ jobApplication.firstName }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.lastName">Last Name</span></dt>
+        <dd>
+          <span>{{ jobApplication.lastName }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.age">Age</span></dt>
+        <dd>
+          <span>{{ jobApplication.age }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.gender">Gender</span></dt>
+        <dd>
+          <span>{{ jobApplication.gender }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.educationStatus">Education Status</span></dt>
+        <dd>
+          <span>{{ jobApplication.educationStatus }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.city">City</span></dt>
+        <dd>
+          <span>{{ jobApplication.city }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.district">District</span></dt>
+        <dd>
+          <span>{{ jobApplication.district }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.militaryStatus">Military Status</span></dt>
+        <dd>
+          <span>{{ jobApplication.militaryStatus }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.language">Language</span></dt>
+        <dd>
+          <span>{{ jobApplication.language }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.programmingLanguage">Programming Language</span></dt>
+        <dd>
+          <span>{{ jobApplication.programmingLanguage }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.hobbies">Hobbies</span></dt>
+        <dd>
+          <span>{{ jobApplication.hobbies }}</span>
+        </dd>
+        <dt><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.certificates">Certificates</span></dt>
+        <dd>
+          <span>{{ jobApplication.certificates }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/job-application', jobApplication.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+<div>
+  <h2 id="page-heading" data-cy="JobApplicationHeading">
+    <span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.home.title">Job Applications</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info mr-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-job-application"
+        [routerLink]="['/job-application/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.home.createLabel"> Create a new Job Application </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="jobApplications?.length === 0">
+    <span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.home.notFound">No jobApplications found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="jobApplications && jobApplications.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.firstName">First Name</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.lastName">Last Name</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.age">Age</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.gender">Gender</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.educationStatus">Education Status</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.city">City</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.district">District</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.militaryStatus">Military Status</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.language">Language</span></th>
+          <th scope="col">
+            <span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.programmingLanguage">Programming Language</span>
+          </th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.hobbies">Hobbies</span></th>
+          <th scope="col"><span jhiTranslate="humanResourcesQueryScreenApp.jobApplication.certificates">Certificates</span></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jobApplication of jobApplications; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/job-application', jobApplication.id, 'view']">{{ jobApplication.id }}</a>
+          </td>
+          <td>{{ jobApplication.firstName }}</td>
+          <td>{{ jobApplication.lastName }}</td>
+          <td>{{ jobApplication.age }}</td>
+          <td>{{ jobApplication.gender }}</td>
+          <td>{{ jobApplication.educationStatus }}</td>
+          <td>{{ jobApplication.city }}</td>
+          <td>{{ jobApplication.district }}</td>
+          <td>{{ jobApplication.militaryStatus }}</td>
+          <td>{{ jobApplication.language }}</td>
+          <td>{{ jobApplication.programmingLanguage }}</td>
+          <td>{{ jobApplication.hobbies }}</td>
+          <td>{{ jobApplication.certificates }}</td>
+          <td class="text-right">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/job-application', jobApplication.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/job-application', jobApplication.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(jobApplication)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

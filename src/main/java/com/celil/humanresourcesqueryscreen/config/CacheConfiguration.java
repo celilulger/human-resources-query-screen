@@ -48,6 +48,7 @@ public class CacheConfiguration {
             createCache(cm, com.celil.humanresourcesqueryscreen.domain.User.class.getName());
             createCache(cm, com.celil.humanresourcesqueryscreen.domain.Authority.class.getName());
             createCache(cm, com.celil.humanresourcesqueryscreen.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.celil.humanresourcesqueryscreen.domain.JobApplication.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
