@@ -1,0 +1,18 @@
+
+entity JobApplication {
+	firstName String,
+    lastName String,
+    age Integer,
+    gender String,
+    educationStatus String,
+    city String,
+    district String,
+    militaryStatus String,
+    language String,
+    programmingLanguage String,
+    hobbies String,
+    certificates String
+}
+
+
+
